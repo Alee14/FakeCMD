@@ -2,7 +2,9 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <Authors>Andrew Lee</Authors>
+    <Copyright>(C) Copyright 2021 Andrew Lee</Copyright>
   </PropertyGroup>
 
   <ItemGroup>

@@ -7,9 +7,13 @@ namespace FakeCMD
     {
         static void Main(string[] args)
         {
+#if DEBUG
+            Console.WriteLine("You are running .NET {0}", Environment.Version.ToString());
+#endif
             RegistryKey registryKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows NT\CurrentVersion");
             var buildNumber = registryKey.GetValue("UBR").ToString();
             Console.WriteLine($"Microsoft Windows [Version {buildNumber}]");
+            Console.ReadLine();
         }
     }
 }
